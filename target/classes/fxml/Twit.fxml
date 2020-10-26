@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" prefHeight="354.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane fx:id="pane" prefHeight="354.0" prefWidth="1140.0" style="-fx-background-color: #4A4A44;">
+            <children>
+            <Rectangle fx:id="rect" arcHeight="30.0" arcWidth="30.0" fill="#1f93ff" height="354.0" layoutX="1.0" layoutY="3.0" stroke="#b5b39a" strokeType="INSIDE" strokeWidth="5.0" style="-fx-fill: transparent;" width="1140.0" />
+                <Label fx:id="firstName" layoutX="171.0" layoutY="28.0" onMousePressed="#goToProfile" prefHeight="76.0" prefWidth="501.0" text="Name" textFill="#dcdbc4">
+                    <font>
+                        <Font name="Square 721 BT" size="60.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Label>
+            <ImageView fx:id="image" fitHeight="120.0" fitWidth="120.0" layoutX="31.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="username" alignment="CENTER_RIGHT" layoutX="743.0" layoutY="28.0" prefHeight="76.0" prefWidth="372.0" text="Username" textFill="#7c7b6f" wrapText="true">
+               <font>
+                  <Font name="Square 721 BT" size="40.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="text" cacheShape="false" centerShape="false" editable="false" focusColor="#4a4a44" focusTraversable="false" layoutX="171.0" layoutY="104.0" prefHeight="126.0" prefWidth="944.0" scaleShape="false" style="-fx-background-color: #4A4A44; -fx-text-fill: #dcdbc4;" text="Twit" unFocusColor="#4a4a44" wrapText="true">
+               <font>
+                  <Font size="30.0" />
+               </font></JFXTextArea>
+            <FontAwesomeIconView fx:id="like" fill="#dbc5c5" glyphName="HEART_ALT" layoutX="309.0" layoutY="304.0" onMousePressed="#like" size="60" />
+            <MaterialDesignIconView fx:id="reply" fill="#c5dbc9" glyphName="MESSAGE" layoutX="235.0" layoutY="306.0" onMousePressed="#reply" size="62" />
+            <FontAwesomeIconView fx:id="share" fill="#c9c5db" glyphName="SHARE_ALT" layoutX="171.0" layoutY="304.0" onMousePressed="#share" size="60" />
+            <Label fx:id="likeCount" alignment="CENTER" layoutX="319.0" layoutY="307.0" prefHeight="40.0" prefWidth="40.0" text="0" textFill="#dcdbc4">
+               <font>
+                  <Font name="Square 721 BT" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="commentCount" alignment="CENTER" layoutX="246.0" layoutY="307.0" prefHeight="40.0" prefWidth="40.0" text="0" textFill="#dcdbc4">
+               <font>
+                  <Font name="Square 721 BT" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="shareCount" alignment="CENTER" layoutX="177.0" layoutY="307.0" prefHeight="40.0" prefWidth="40.0" text="0" textFill="#dcdbc4">
+               <font>
+                  <Font name="Square 721 BT" size="30.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

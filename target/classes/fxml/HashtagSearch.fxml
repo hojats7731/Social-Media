@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HashtagSearchController">
+    <children>
+        <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #4A4A44;">
+            <children>
+                <Line endX="1099.0" layoutX="101.0" layoutY="157.0" startX="-100.0" stroke="#b5b39a" strokeWidth="6.0" />
+                <JFXButton fx:id="sectionsBtn" contentDisplay="RIGHT" layoutX="972.0" layoutY="26.0" onMouseReleased="#onSectionBtnPressed" prefHeight="97.0" prefWidth="199.0" ripplerFill="#a89696" style="-fx-background-color: #dcdbc4;" text="Sections" textFill="#4a4a44">
+                    <font>
+                        <Font name="Square 721 BT" size="30.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView fill="#4a4a44" glyphName="ARROW_CIRCLE_RIGHT" size="30" />
+                    </graphic>
+                </JFXButton>
+                <JFXTextField fx:id="searchField" focusColor="#dcdbc4" layoutX="136.0" layoutY="26.0" prefHeight="97.0" prefWidth="582.0" promptText="Search among hashtags ..." style="-fx-prompt-text-fill: dd; -fx-text-fill: #dcdbc4;">
+                    <font>
+                        <Font name="Square 721 BT" size="44.0" />
+                    </font>
+                </JFXTextField>
+                <JFXButton fx:id="searchBtn" buttonType="RAISED" contentDisplay="RIGHT" layoutX="746.0" layoutY="26.0" onMouseReleased="#search" prefHeight="97.0" prefWidth="199.0" ripplerFill="#a89696" style="-fx-background-color: #C8C442;" text="Search" textFill="#4a4a44">
+                    <font>
+                        <Font name="Square 721 BT" size="30.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView fill="#4a4a44" glyphName="SEARCH" size="30" />
+                    </graphic>
+                </JFXButton>
+                <FontAwesomeIconView fx:id="userIcon" fill="#dcdbc4" glyphName="HASHTAG" layoutX="58.0" layoutY="91.0" onMousePressed="#changeSearch" size="50">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></FontAwesomeIconView>
+                <ListView id="mylistview" fx:id="twitList" layoutX="18.0" layoutY="167.0" prefHeight="626.0" prefWidth="1175.0" style="-fx-background-color: #4A4A44;" stylesheets="@../css/style.css" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

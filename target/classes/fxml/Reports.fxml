@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReportsController">
+    <children>
+        <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #4A4A44;">
+            <children>
+                <ListView id="mylistview" fx:id="userList" cacheShape="false" centerShape="false" editable="true" focusTraversable="false" layoutX="18.0" layoutY="159.0" prefHeight="634.0" prefWidth="1175.0" scaleShape="false" style="-fx-background-color: #4A4A44;" stylesheets="@../css/style.css" />
+                <Line endX="1099.0" layoutX="101.0" layoutY="157.0" startX="-100.0" stroke="#b5b39a" strokeWidth="6.0" />
+                <JFXButton fx:id="sectionsBtn" contentDisplay="RIGHT" layoutX="963.0" layoutY="26.0" onMouseReleased="#onSectionBtnPressed" prefHeight="97.0" prefWidth="199.0" ripplerFill="#a89696" style="-fx-background-color: #dcdbc4;" text="Sections" textFill="#4a4a44">
+                    <font>
+                        <Font name="Square 721 BT" size="30.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView fill="#4a4a44" glyphName="ARROW_CIRCLE_RIGHT" size="30" />
+                    </graphic>
+                </JFXButton>
+            <JFXButton fx:id="findBtn" buttonType="RAISED" contentDisplay="RIGHT" layoutX="746.0" layoutY="26.0" onMouseReleased="#getReports" prefHeight="97.0" prefWidth="199.0" ripplerFill="#a89696" style="-fx-background-color: #C8C442;" text="Find" textFill="#4a4a44">
+               <font>
+                  <Font name="Square 721 BT" size="30.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#4a4a44" glyphName="SEARCH" size="30" />
+               </graphic>
+            </JFXButton>
+            <FontAwesomeIconView fx:id="reportIcon" fill="#dcdbc4" glyphName="INFO_CIRCLE" layoutX="18.0" layoutY="91.0" size="40" />
+            <JFXComboBox fx:id="reportBox" focusColor="#c8c442" layoutX="73.0" layoutY="25.0" prefHeight="97.0" prefWidth="658.0" promptText="Select a report ..." style="-fx-prompt-text-fill: #dcdbc4; -fx-text-fill: #dcdbc4; -fx-font-family: &quot;Square721 BT&quot;; -fx-font-size: 30; -fx-background-color: #4A4A44;" unFocusColor="#dcdbc4" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

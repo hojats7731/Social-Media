@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InfoRegPageController">
+    <children>
+        <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #4A4A44;">
+            <children>
+                <JFXTextField fx:id="firstName" focusColor="#c8c442" labelFloat="true" layoutX="105.0" layoutY="93.0" prefHeight="88.0" prefWidth="396.0" promptText="First Name" style="-fx-prompt-text-fill: #dcdbc4; -fx-text-inner-color: #dcdbc4;" unFocusColor="#dcdbc4">
+                    <font>
+                        <Font name="Square 721 BT" size="50.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="bio" focusColor="#c8c442" labelFloat="true" layoutX="105.0" layoutY="401.0" prefHeight="97.0" prefWidth="489.0" promptText="Biography" style="-fx-prompt-text-fill: #dcdbc4; -fx-text-inner-color: #dcdbc4;" unFocusColor="#dcdbc4">
+                    <font>
+                        <Font name="Square 721 BT" size="50.0" />
+                    </font>
+                </JFXTextField>
+                <JFXButton fx:id="cntBtn" buttonType="RAISED" layoutX="896.0" layoutY="674.0" onMouseClicked="#onCntBtnPressed" prefHeight="88.0" prefWidth="241.0" ripplerFill="BLACK" style="-fx-background-color: #C8C442;" text="Continue">
+                    <font>
+                        <Font name="Square 721 BT" size="40.0" />
+                    </font>
+                </JFXButton>
+            <ImageView fx:id="imageView" fitHeight="253.0" fitWidth="253.0" layoutX="770.0" layoutY="323.0" onMouseClicked="#changeImage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/profile.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="lastName" focusColor="#c8c442" labelFloat="true" layoutX="699.0" layoutY="93.0" prefHeight="88.0" prefWidth="396.0" promptText="Last Name" style="-fx-prompt-text-fill: #dcdbc4; -fx-text-inner-color: #dcdbc4;" unFocusColor="#dcdbc4">
+               <font>
+                  <Font name="Square 721 BT" size="50.0" />
+               </font>
+            </JFXTextField>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

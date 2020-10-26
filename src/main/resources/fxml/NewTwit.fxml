@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewTwitController">
+    <children>
+        <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #4A4A44;">
+            <children>
+                <Label fx:id="username" layoutX="142.0" layoutY="21.0" prefHeight="106.0" prefWidth="442.0" text="Username" textFill="#dcdbc4">
+                    <font>
+                        <Font name="Square 721 BT" size="85.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="userImage" fitHeight="120.0" fitWidth="120.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/profile.png" />
+                    </image>
+                </ImageView>
+                <JFXButton fx:id="sectionsBtn" contentDisplay="RIGHT" layoutX="963.0" layoutY="26.0" onMouseReleased="#onSectionBtnPressed" prefHeight="97.0" prefWidth="199.0" ripplerFill="#a89696" style="-fx-background-color: #dcdbc4;" text="Sections" textFill="#4a4a44">
+                    <font>
+                        <Font name="Square 721 BT" size="30.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView fill="#4a4a44" glyphName="ARROW_CIRCLE_RIGHT" size="30" />
+                    </graphic>
+                </JFXButton>
+                <Line endX="1099.0" layoutX="101.0" layoutY="157.0" startX="-100.0" stroke="#b5b39a" strokeWidth="6.0" />
+            <JFXTextArea fx:id="text" focusColor="#dcdbc4" layoutX="34.0" layoutY="186.0" prefHeight="471.0" prefWidth="1127.0" promptText="Type Something ..." style="-fx-prompt-text-fill: #dcdbc4; -fx-text-fill: #dcdbc4;">
+               <font>
+                  <Font name="Square 721 BT" size="35.0" />
+               </font>
+            </JFXTextArea>
+            <JFXButton fx:id="sendBtn" contentDisplay="RIGHT" layoutX="498.0" layoutY="678.0" onMousePressed="#onSendBtnPressed" prefHeight="97.0" prefWidth="199.0" ripplerFill="BLACK" style="-fx-background-color: #C8C442;" text="Send">
+               <font>
+                  <Font name="Square 721 BT" size="30.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView glyphName="SEND" size="30" />
+               </graphic>
+            </JFXButton>
+            </children>
+        </Pane>
+    </children>
+</StackPane>

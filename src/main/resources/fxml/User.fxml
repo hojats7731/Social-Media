@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" prefHeight="183.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane fx:id="pane" prefHeight="194.0" prefWidth="1140.0" style="-fx-background-color: #4A4A44;">
+            <children>
+                <Rectangle fx:id="rect" arcHeight="30.0" arcWidth="30.0" fill="#1f93ff" height="191.0" stroke="#b5b39a" strokeType="INSIDE" strokeWidth="5.0" style="-fx-fill: transparent;" width="1140.0" />
+                <Label fx:id="name" layoutX="171.0" layoutY="28.0" onMouseReleased="#goToProfile" prefHeight="86.0" prefWidth="628.0" text="Name" textFill="#dcdbc4" wrapText="true">
+                    <font>
+                        <Font name="Square 721 BT" size="60.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Label>
+                <ImageView fx:id="image" fitHeight="120.0" fitWidth="120.0" layoutX="34.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="username" layoutX="171.0" layoutY="99.0" prefHeight="65.0" prefWidth="372.0" text="Username" textFill="#7c7b6f" wrapText="true">
+                    <font>
+                        <Font name="Square 721 BT" size="40.0" />
+                    </font>
+                </Label>
+            <JFXButton fx:id="followBtn" graphicTextGap="6.0" layoutX="813.0" layoutY="52.0" onMouseReleased="#followUser" prefHeight="94.0" prefWidth="300.0" style="-fx-background-color: #dcdbc4;" text="Follow">
+               <font>
+                  <Font name="Square 721 BT" size="33.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fx:id="followIcon" glyphName="PLUS_CIRCLE" size="26" />
+               </graphic>
+            </JFXButton>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterPageController">
+    <children>
+        <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #4A4A44;">
+            <children>
+                <Label fx:id="loginText" alignment="CENTER" layoutX="419.0" layoutY="51.0" prefHeight="122.0" prefWidth="365.0" text="Register" textFill="#dcdbc4">
+                    <font>
+                        <Font name="Square 721 BT" size="85.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="username" focusColor="#c8c442" labelFloat="true" layoutX="119.0" layoutY="225.0" prefHeight="88.0" prefWidth="396.0" promptText="Username" style="-fx-prompt-text-fill: #dcdbc4; -fx-text-inner-color: #dcdbc4;" unFocusColor="#dcdbc4">
+                    <font>
+                        <Font name="Square 721 BT" size="50.0" />
+                    </font>
+                </JFXTextField>
+                <JFXPasswordField fx:id="password" focusColor="#c8c442" labelFloat="true" layoutX="715.0" layoutY="225.0" prefHeight="97.0" prefWidth="396.0" promptText="Password" style="-fx-prompt-text-fill: #dcdbc4; -fx-text-inner-color: #dcdbc4;" unFocusColor="#dcdbc4">
+                    <font>
+                        <Font name="Square 721 BT" size="50.0" />
+                    </font>
+                </JFXPasswordField>
+            <JFXTextField fx:id="email" focusColor="#c8c442" labelFloat="true" layoutX="119.0" layoutY="458.0" prefHeight="88.0" prefWidth="396.0" promptText="Email" style="-fx-prompt-text-fill: #dcdbc4; -fx-text-inner-color: #dcdbc4;" unFocusColor="#dcdbc4">
+               <font>
+                  <Font name="Square 721 BT" size="50.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="phoneNumber" focusColor="#c8c442" labelFloat="true" layoutX="715.0" layoutY="458.0" prefHeight="88.0" prefWidth="396.0" promptText="PhoneNumber" style="-fx-prompt-text-fill: #dcdbc4; -fx-text-inner-color: #dcdbc4;" unFocusColor="#dcdbc4">
+               <font>
+                  <Font name="Square 721 BT" size="50.0" />
+               </font>
+            </JFXTextField>
+                <JFXButton fx:id="cntBtn" buttonType="RAISED" layoutX="896.0" layoutY="674.0" onMouseClicked="#onCntBtnPressed" prefHeight="88.0" prefWidth="241.0" ripplerFill="BLACK" style="-fx-background-color: #C8C442;" text="Continue">
+                    <font>
+                        <Font name="Square 721 BT" size="40.0" />
+                    </font>
+                </JFXButton>
+            <FontAwesomeIconView fill="#dcdbc4" glyphName="USER" layoutX="29.0" layoutY="317.0" size="80" />
+            <FontAwesomeIconView fill="#dcdbc4" glyphName="ENVELOPE" layoutX="20.0" layoutY="552.0" size="80" />
+            <FontAwesomeIconView fill="#dcdbc4" glyphName="KEY" layoutX="620.0" layoutY="317.0" size="80" />
+            <FontAwesomeIconView fill="#dcdbc4" glyphName="PHONE" layoutX="629.0" layoutY="558.0" size="80" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
